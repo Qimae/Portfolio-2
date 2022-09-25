@@ -30,15 +30,15 @@ export const Services = () => {
             {/* right side */}
             <div className="cards">
                 <motion.div
-                initial= {{left: '28rem'}}
-                whileInView= {{left: '24rem'}}
+                initial= {{left: '20rem'}}
+                whileInView= {{left: '15rem'}}
                 transition= {transition}
                 >
                     <Card image={Design} heading={'Design'} details={'Figma, Pen & Paper, Font Awesome, Sketch'} />
                 </motion.div>
                 <motion.div 
                 initial= {{left: '-11rem', top: '12rem'}}
-                whileInView= {{left: '2rem'}}
+                whileInView= {{left: '-5rem'}}
                 transition= {transition}
                 >
                     <Card image={Developer} heading={'Developer'} details={'Bootstrap, Github, CodePen, jQuery, Chrome Dev Tools'} />
