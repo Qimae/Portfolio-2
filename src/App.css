@@ -1,0 +1,38 @@
+:root {
+  --clr-blue: blue;
+  --clr-dark-blue: rgb(5, 5, 138);
+  --clr-black: rgb(3, 9, 61);
+  --clr-gray: #788097;
+  --clr-blueCard: #ddf8fe;
+  --clr-purple: rgb(238 210 255);
+  --clr-boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.288);
+  --clr-dark-blue-card: rgb(5, 5, 138, 0.45);
+  --clr-smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--clr-black);
+}
+.button{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(180deg, var(--clr-blue) 26.71%, var(--clr-dark-blue) 99.36%);
+}
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: orange;
+  border: 1px solid orange;
+}
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
+  
+}
