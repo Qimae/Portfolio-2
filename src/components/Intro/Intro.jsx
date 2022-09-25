@@ -35,11 +35,11 @@ const Intro = () => {
                     <a href='https://github.com/Qimae'>
                     <FaGithub />
                     </a>
-                    <a href='https://github.com/Qimae'>
+                    <a href='https://www.linkedin.com/in/kimae-ngowa-aa84328b'>
                     <FaLinkedin />
                         
                     </a>
-                    <a href='https://github.com/Qimae'>
+                    <a href='https://instagram.com/Qimae'>
                     <FaInstagram />
                         
                     </a>
