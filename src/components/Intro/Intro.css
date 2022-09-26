@@ -89,7 +89,7 @@
     top: -18%;
     left: 56%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
     .Intro {
         flex-direction: column;
         height: 64rem;

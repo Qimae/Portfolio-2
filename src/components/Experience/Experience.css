@@ -44,7 +44,7 @@
     color: var(--clr-blue);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
     .experience {
         transform: scale(0.7);
         margin-top: -20rem;

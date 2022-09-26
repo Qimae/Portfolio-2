@@ -6,40 +6,51 @@
     height: 70vh;
     margin-top: -8rem;
 }
+
 /* heading */
-.portfolio span:nth-of-type(1){
+.portfolio span:nth-of-type(1) {
     color: var(--clr-black);
     font-size: 2rem;
     font-weight: bold;
 }
-.portfolio span:nth-of-type(2){
+
+.portfolio span:nth-of-type(2) {
     color: var(--clr-blue);
     font-size: 2.5rem;
     font-weight: bold;
 }
-.portfolio .swiper{
-    overflow: visible!important;
+
+.portfolio .swiper {
+    overflow: visible !important;
 }
+
 .portfolio-slider {
     margin-top: 3rem;
     width: 100%;
 }
-.portfolio-slider .swiper-slide{
+
+.portfolio-slider .swiper-slide {
     width: 20rem;
 }
+
 .portfolio img {
     width: 19rem;
     filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
     border-radius: 19px;
 }
-.portfolio img:hover {
-    width: 20rem;
-    transition-delay: 10ms;
+.portfolio .swiper-pagination-bullet-active {
+    background: var(--clr-blue);
 
 }
-@media screen and (max-width: 480px){
-    .portfolio img {
-        width: 5rem;
-        height: 5rem;
+
+@media screen and (min-width: 768px) {
+    .portfolio-slider {
+        width: 60rem;
+        left: -20rem;
+    }
+  }
+@media screen and (min-width: 300px) {
+    .portfolio-slider{
+        width: 20rem;
     }
 }

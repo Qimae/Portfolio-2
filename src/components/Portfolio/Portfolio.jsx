@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import "swiper/css/pagination"
+import { Pagination } from 'swiper';
 
 
 
@@ -22,22 +24,34 @@ const Portfolio = () => {
 
             {/* slider */}
             <Swiper
+                breakpoints={
+                    {
+                        786: {
+                            slidesPerView: 1,
+                        },
+                        300: {
+                            slidesPerView: 1
+                        }
+                    }
+                }
+                modules={[Pagination]}
                 spaceBetween={30}
+                pagination={{clickable: true}}
                 slidesPerView={3}
                 grabCursor={true}
                 className='portfolio-slider'
             >
-                <SwiperSlide>
+                <SwiperSlide className='swiper-slide'>
                     <a href=''>
-                    <img src={Company1} alt="" /></a>
+                        <img src={Company1} alt="" /></a>
                 </SwiperSlide>
                 <SwiperSlide>
-                <a href='http://jogolo-plaza.000webhostapp.com/'>
-                    <img src={Company2} alt="" /></a>
+                    <a href='http://jogolo-plaza.000webhostapp.com/'>
+                        <img src={Company2} alt="" /></a>
                 </SwiperSlide>
                 <SwiperSlide>
-                <a href='https://letsbuidit.netlify.app/'>
-                    <img src={Company3} alt="" /></a>
+                    <a href='https://letsbuidit.netlify.app/'>
+                        <img src={Company3} alt="" /></a>
                 </SwiperSlide>
 
             </Swiper>
